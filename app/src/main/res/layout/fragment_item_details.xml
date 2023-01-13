@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".item_details">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="56dp">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="17dp"
+                android:layout_marginLeft="18dp"
+                android:src="@drawable/ic_baseline_arrow_back_24"
+                android:scaleType="fitStart"
+                android:id="@+id/backBtn" />
+
+        </LinearLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="42dp"
+            android:id="@+id/itemRef">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/imgRef">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="250dp"
+                        android:src="@drawable/frappuccino"
+                        android:id="@+id/itemImage"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="24dp"
+                    android:paddingBottom="36dp"
+                    android:background="@color/grey2"
+                    android:orientation="vertical"
+                    android:layout_below="@id/imgRef">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_marginLeft="18dp"
+                        android:layout_marginRight="18dp"
+                        android:text="Item Name"
+                        android:fontFamily="@font/regular"
+                        android:textSize="20dp"
+                        android:textColor="@color/primary1"
+                        android:textAlignment="center"
+                        android:id="@+id/itemName"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_marginTop="12dp"
+                        android:layout_marginLeft="58dp"
+                        android:layout_marginRight="58dp"
+                        android:text="Description"
+                        android:fontFamily="@font/extralight"
+                        android:textSize="18dp"
+                        android:textColor="@color/primary1"
+                        android:textAlignment="center"
+                        android:id="@+id/description"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginTop="24dp"
+                        android:background="@color/grey"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_marginTop="24dp"
+                        android:layout_marginLeft="18dp"
+                        android:layout_marginRight="18dp"
+                        android:text="Note To Barista (Optional)"
+                        android:fontFamily="@font/regular"
+                        android:textSize="18dp"
+                        android:textColor="@color/primary1"
+                        android:textAlignment="textStart"/>
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="18dp"
+                        android:layout_marginRight="18dp"
+                        android:inputType="text"
+                        android:hint="Comment"
+                        android:textColorHint="@color/primary1"
+                        android:fontFamily="@font/extralight"
+                        android:textColor="@color/primary1"
+                        android:textSize="16dp"
+                        android:id="@+id/comment"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_marginLeft="18dp"
+                        android:layout_marginRight="18dp"
+                        android:text="0/200"
+                        android:fontFamily="@font/extralight"
+                        android:textSize="16dp"
+                        android:textColor="@color/primary1"
+                        android:textAlignment="textEnd"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="48dp"
+                    android:layout_below="@id/itemRef">
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="24dp"
+                        android:layout_marginLeft="28dp"
+                        android:layout_marginRight="28dp"
+                        android:background="@drawable/button"
+                        android:textAlignment="center"
+                        android:text="Add to Order - RM"
+                        android:fontFamily="@font/regular"
+                        android:textColor="@color/white"
+                        android:textAllCaps="false"
+                        android:textSize="20dp"
+                        android:id="@+id/addToOrder"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </ScrollView>
+
+    </RelativeLayout>
+
+</FrameLayout>

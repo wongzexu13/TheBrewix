@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Setting"
+                android:fontFamily="@font/medium"
+                android:textSize="28dp"
+                android:textColor="@color/primary1"
+                android:textAlignment="center"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="12dp"
+                android:background="@color/grey"/>
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="28dp"
+                        android:layout_marginTop="24dp"
+                        android:layout_marginRight="28dp"
+                        android:fontFamily="@font/semibold"
+                        android:text="SECURITY"
+                        android:textAlignment="textStart"
+                        android:textColor="@color/primary1"
+                        android:textSize="16dp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:weightSum="2">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:layout_marginLeft="28dp"
+                            android:layout_marginRight="28dp"
+                            android:layout_marginTop="12dp"
+                            android:text="Biometric Login"
+                            android:fontFamily="@font/light"
+                            android:textColor="@color/primary1"
+                            android:textSize="16dp"
+                            android:textAlignment="textStart"/>
+
+                        <Switch
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:layout_marginTop="12dp"
+                            android:layout_marginRight="28dp"
+                            android:theme="@style/CustomSwitch"
+                            android:id="@+id/biometric"/>
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginTop="24dp"
+                        android:background="@color/grey"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="28dp"
+                        android:layout_marginRight="28dp"
+                        android:layout_marginTop="24dp"
+                        android:text="GENERAL"
+                        android:fontFamily="@font/semibold"
+                        android:textColor="@color/primary1"
+                        android:textSize="16dp"
+                        android:textAlignment="textStart"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_marginLeft="28dp"
+                        android:layout_marginRight="28dp"
+                        android:layout_marginTop="12dp"
+                        android:text="Personal Information"
+                        android:fontFamily="@font/light"
+                        android:textColor="@color/primary1"
+                        android:textSize="16dp"
+                        android:textAlignment="textStart"
+                        android:id="@+id/profile"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginTop="24dp"
+                        android:background="@color/grey"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="28dp"
+                        android:layout_marginRight="28dp"
+                        android:layout_marginTop="24dp"
+                        android:text="ABOUT"
+                        android:fontFamily="@font/semibold"
+                        android:textColor="@color/primary1"
+                        android:textSize="16dp"
+                        android:textAlignment="textStart"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_marginLeft="28dp"
+                        android:layout_marginRight="28dp"
+                        android:layout_marginTop="12dp"
+                        android:text="Rewards FAQs"
+                        android:fontFamily="@font/light"
+                        android:textColor="@color/primary1"
+                        android:textSize="16dp"
+                        android:textAlignment="textStart"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_marginLeft="28dp"
+                        android:layout_marginRight="28dp"
+                        android:layout_marginTop="12dp"
+                        android:text="Terms of use"
+                        android:fontFamily="@font/light"
+                        android:textColor="@color/primary1"
+                        android:textSize="16dp"
+                        android:textAlignment="textStart"
+                        android:id="@+id/termsOfUse"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_marginLeft="28dp"
+                        android:layout_marginRight="28dp"
+                        android:layout_marginTop="12dp"
+                        android:text="Privacy Policy"
+                        android:fontFamily="@font/light"
+                        android:textColor="@color/primary1"
+                        android:textSize="16dp"
+                        android:textAlignment="textStart"
+                        android:id="@+id/privacyPolicy"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_marginLeft="28dp"
+                        android:layout_marginRight="28dp"
+                        android:layout_marginTop="12dp"
+                        android:text="Contact Us"
+                        android:fontFamily="@font/light"
+                        android:textColor="@color/primary1"
+                        android:textSize="16dp"
+                        android:textAlignment="textStart"
+                        android:id="@+id/support"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_marginLeft="28dp"
+                        android:layout_marginRight="28dp"
+                        android:layout_marginTop="12dp"
+                        android:text="Tell a friend"
+                        android:fontFamily="@font/light"
+                        android:textColor="@color/primary1"
+                        android:textSize="16dp"
+                        android:textAlignment="textStart"
+                        android:id="@+id/share"/>
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="75dp"
+                        android:layout_marginRight="75dp"
+                        android:layout_marginTop="36dp"
+                        android:background="@drawable/button"
+                        android:textAlignment="center"
+                        android:text="Sign Out"
+                        android:fontFamily="@font/regular"
+                        android:textColor="@color/white"
+                        android:textAllCaps="false"
+                        android:textSize="20dp"
+                        android:id="@+id/signOut"/>
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="75dp"
+                        android:layout_marginRight="75dp"
+                        android:layout_marginTop="12dp"
+                        android:background="@drawable/delete_button"
+                        android:textAlignment="center"
+                        android:text="Delete Account"
+                        android:fontFamily="@font/regular"
+                        android:textColor="@color/red"
+                        android:textAllCaps="false"
+                        android:textSize="20dp"
+                        android:id="@+id/delete"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_marginTop="12dp"
+                        android:layout_marginBottom="36dp"
+                        android:text="App Version 3.2.3"
+                        android:fontFamily="@font/light"
+                        android:textColor="@color/primary1"
+                        android:textSize="14dp"
+                        android:textAlignment="center"/>
+
+                </LinearLayout>
+
+
+            </ScrollView>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</FrameLayout>

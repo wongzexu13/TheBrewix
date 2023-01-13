@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_centerInParent="true">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/bold"
+                    android:layout_marginTop="72dp"
+                    android:layout_marginLeft="48dp"
+                    android:layout_marginRight="48dp"
+                    android:text="The most-awaited bean returns !"
+                    android:textColor="@color/primary1"
+                    android:textSize="28dp"
+                    android:textAlignment="center"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="48dp">
+
+                    <VideoView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/video"/>
+
+                </LinearLayout>
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="28dp"
+                    android:layout_marginRight="28dp"
+                    android:layout_marginTop="72dp"
+                    android:background="@drawable/button"
+                    android:textAlignment="center"
+                    android:text="Shop now"
+                    android:fontFamily="@font/regular"
+                    android:textColor="@color/white"
+                    android:textAllCaps="false"
+                    android:textSize="20dp"
+                    android:id="@+id/shop"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="at your nearest Brewix Store"
+                    android:fontFamily="@font/regular"
+                    android:textColor="@color/primary1"
+                    android:textSize="14dp"
+                    android:textAlignment="center"/>
+
+
+            </LinearLayout>
+
+
+
+
+        </RelativeLayout>
+</FrameLayout>

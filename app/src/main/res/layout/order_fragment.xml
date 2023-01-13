@@ -1,0 +1,322 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="24dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="18dp"
+                android:layout_marginRight="18dp"
+                android:text="Order &amp; Collect"
+                android:fontFamily="@font/bold"
+                android:textColor="@color/primary1"
+                android:textSize="24dp"
+                android:textAlignment="textStart"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:layout_marginLeft="18dp"
+                android:layout_marginRight="18dp"
+                android:text="Xiamen University Malaysia DT"
+                android:fontFamily="@font/regular"
+                android:textColor="@color/primary1"
+                android:textSize="14dp"
+                android:textAlignment="textStart"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="18dp"
+                android:layout_marginRight="18dp"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginRight="-40dp"
+                    android:text="Accepting Order"
+                    android:fontFamily="@font/light"
+                    android:textColor="@color/primary2"
+                    android:textSize="14dp"
+                    android:textAlignment="textStart"
+                    android:id="@+id/order"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="40dp"
+                    android:text="Change Location"
+                    android:fontFamily="@font/regular"
+                    android:textColor="@color/primary1"
+                    android:textSize="14dp"
+                    android:textAlignment="textEnd"
+                    android:id="@+id/location"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="24dp"
+                android:background="@color/grey"/>
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="18dp"
+                        android:layout_marginRight="8dp"
+                        android:layout_marginTop="36dp"
+                        android:orientation="horizontal"
+                        android:weightSum="2">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="-40dp"
+                            android:orientation="vertical"
+                            android:layout_weight="1">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Order fast."
+                                android:fontFamily="@font/bold"
+                                android:textColor="@color/primary1"
+                                android:textSize="24dp"
+                                android:textAlignment="textStart"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Reorder faster."
+                                android:fontFamily="@font/bold"
+                                android:textColor="@color/primary1"
+                                android:textSize="24dp"
+                                android:textAlignment="textStart"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Earn points."
+                                android:fontFamily="@font/bold"
+                                android:textColor="@color/primary1"
+                                android:textSize="24dp"
+                                android:textAlignment="textStart"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Learn More"
+                                android:fontFamily="@font/regular"
+                                android:textColor="@color/primary1"
+                                android:textSize="14dp"
+                                android:textAlignment="textStart"/>
+
+                        </LinearLayout>
+
+                        <ImageView
+                            android:layout_width="200dp"
+                            android:layout_height="100dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_weight="1"
+                            android:src="@drawable/logo"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="36dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Explore our menu"
+                            android:fontFamily="@font/regular"
+                            android:textColor="@color/primary1"
+                            android:textSize="14dp"
+                            android:textAlignment="center"/>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="18dp"
+                            android:layout_marginTop="24dp"
+                            android:orientation="horizontal"
+                            android:weightSum="2"
+                            android:id="@+id/espresso">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="20dp"
+                                android:layout_weight="1"
+                                android:text="Espresso &amp; Coffee"
+                                android:fontFamily="@font/medium"
+                                android:textColor="@color/primary1"
+                                android:textSize="24dp"
+                                android:textAlignment="textStart"/>
+
+                            <ImageView
+                                android:layout_width="80dp"
+                                android:layout_height="80dp"
+                                android:layout_weight="1"
+                                android:src="@drawable/espresso"/>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="@color/grey"/>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="18dp"
+                            android:orientation="horizontal"
+                            android:weightSum="2"
+                            android:id="@+id/frappuccino">
+
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="15dp"
+                                android:layout_weight="1"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Frappuccino"
+                                    android:fontFamily="@font/medium"
+                                    android:textColor="@color/primary1"
+                                    android:textSize="24dp"
+                                    android:textAlignment="textStart"/>
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Blended Beverage"
+                                    android:fontFamily="@font/light"
+                                    android:textColor="@color/primary1"
+                                    android:textSize="14dp"
+                                    android:textAlignment="textStart"/>
+
+                            </LinearLayout>
+
+                            <ImageView
+                                android:layout_width="80dp"
+                                android:layout_height="80dp"
+                                android:layout_weight="1"
+                                android:layout_marginLeft="65dp"
+                                android:src="@drawable/frappuccino"/>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="@color/grey"/>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="18dp"
+                            android:orientation="horizontal"
+                            android:id="@+id/chocolateTea"
+                            android:weightSum="2">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="20dp"
+                                android:layout_weight="1"
+                                android:text="Chocolate &amp; Tea"
+                                android:fontFamily="@font/medium"
+                                android:textColor="@color/primary1"
+                                android:textSize="24dp"
+                                android:textAlignment="textStart"/>
+
+                            <ImageView
+                                android:layout_width="80dp"
+                                android:layout_height="80dp"
+                                android:layout_marginLeft="20dp"
+                                android:layout_weight="1"
+                                android:src="@drawable/chocolate"/>
+
+                        </LinearLayout>
+
+<!--                        <LinearLayout-->
+<!--                            android:layout_width="match_parent"-->
+<!--                            android:layout_height="1dp"-->
+<!--                            android:background="@color/grey"/>-->
+
+<!--                        <LinearLayout-->
+<!--                            android:layout_width="match_parent"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:layout_marginLeft="18dp"-->
+<!--                            android:layout_marginBottom="36dp"-->
+<!--                            android:orientation="horizontal"-->
+<!--                            android:weightSum="2">-->
+
+<!--                            <TextView-->
+<!--                                android:layout_width="wrap_content"-->
+<!--                                android:layout_height="wrap_content"-->
+<!--                                android:layout_weight="1"-->
+<!--                                android:layout_marginTop="20dp"-->
+<!--                                android:text="Bakery"-->
+<!--                                android:fontFamily="@font/medium"-->
+<!--                                android:textColor="@color/primary1"-->
+<!--                                android:textSize="24dp"-->
+<!--                                android:textAlignment="textStart"/>-->
+
+<!--                            <ImageView-->
+<!--                                android:layout_width="80dp"-->
+<!--                                android:layout_height="80dp"-->
+<!--                                android:layout_marginLeft="120dp"-->
+<!--                                android:layout_weight="1"-->
+<!--                                android:src="@drawable/bakery"/>-->
+
+<!--                        </LinearLayout>-->
+
+                    </LinearLayout>
+
+
+
+                </LinearLayout>
+
+            </ScrollView>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</FrameLayout>

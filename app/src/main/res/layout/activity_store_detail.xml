@@ -1,0 +1,344 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".store_detail">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="18dp"
+                android:layout_marginRight="18dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:src="@drawable/ic_baseline_arrow_back_24"
+                    android:scaleType="fitStart"
+                    android:id="@+id/backBtn"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="24dp"
+                    android:text="The Brewix"
+                    android:fontFamily="@font/semibold"
+                    android:textColor="@color/primary1"
+                    android:textSize="22dp"
+                    android:textAlignment="center"/>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Xiamen University Malaysia DT"
+                android:fontFamily="@font/semibold"
+                android:textColor="@color/primary1"
+                android:textSize="18dp"
+                android:textAlignment="center"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="24dp"
+                android:background="@color/grey"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="58dp"
+                android:layout_marginRight="28dp"
+                android:layout_marginTop="24dp"
+                android:text="Xiamen University Malaysia, Jalan Sunsuria, Bandar Sunsuria, 43900 Sepang, Selangor"
+                android:fontFamily="@font/light"
+                android:textColor="@color/primary1"
+                android:textSize="14dp"
+                android:textAlignment="textStart"
+                android:id="@+id/mapDirection"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="58dp"
+                android:layout_marginRight="28dp"
+                android:text="0.8km"
+                android:fontFamily="@font/extralight"
+                android:textColor="@color/primary1"
+                android:textSize="14dp"
+                android:textAlignment="textStart"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="24dp"
+                android:background="@color/grey"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="58dp"
+                android:layout_marginRight="28dp"
+                android:layout_marginTop="24dp"
+                android:text="603-66006800"
+                android:fontFamily="@font/light"
+                android:textColor="@color/primary1"
+                android:textSize="14dp"
+                android:textAlignment="textStart"
+                android:id="@+id/phone"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="24dp"
+                android:background="@color/grey"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="58dp"
+                android:layout_marginRight="28dp"
+                android:layout_marginTop="24dp"
+                android:text="HOURS"
+                android:fontFamily="@font/semibold"
+                android:textColor="@color/primary1"
+                android:textSize="14dp"
+                android:textAlignment="textStart"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:layout_marginLeft="58dp"
+                android:layout_marginRight="58dp"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Monday"
+                    android:fontFamily="@font/light"
+                    android:textColor="@color/primary1"
+                    android:textAlignment="textStart"
+                    android:textSize="14dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="10:00 am - 12:00 am"
+                    android:fontFamily="@font/light"
+                    android:textColor="@color/primary1"
+                    android:textAlignment="textEnd"
+                    android:textSize="14dp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:layout_marginLeft="58dp"
+                android:layout_marginRight="58dp"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Tuesday"
+                    android:fontFamily="@font/light"
+                    android:textColor="@color/primary1"
+                    android:textAlignment="textStart"
+                    android:textSize="14dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="10:00 am - 12:00 am"
+                    android:fontFamily="@font/light"
+                    android:textColor="@color/primary1"
+                    android:textAlignment="textEnd"
+                    android:textSize="14dp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:layout_marginLeft="58dp"
+                android:layout_marginRight="58dp"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Wednesday"
+                    android:fontFamily="@font/light"
+                    android:textColor="@color/primary1"
+                    android:textAlignment="textStart"
+                    android:textSize="14dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="10:00 am - 12:00 am"
+                    android:fontFamily="@font/light"
+                    android:textColor="@color/primary1"
+                    android:textAlignment="textEnd"
+                    android:textSize="14dp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:layout_marginLeft="58dp"
+                android:layout_marginRight="58dp"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Thursday"
+                    android:fontFamily="@font/light"
+                    android:textColor="@color/primary1"
+                    android:textAlignment="textStart"
+                    android:textSize="14dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="10:00 am - 12:00 am"
+                    android:fontFamily="@font/light"
+                    android:textColor="@color/primary1"
+                    android:textAlignment="textEnd"
+                    android:textSize="14dp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:layout_marginLeft="58dp"
+                android:layout_marginRight="58dp"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Friday"
+                    android:fontFamily="@font/light"
+                    android:textColor="@color/primary1"
+                    android:textAlignment="textStart"
+                    android:textSize="14dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="10:00 am - 12:00 am"
+                    android:fontFamily="@font/light"
+                    android:textColor="@color/primary1"
+                    android:textAlignment="textEnd"
+                    android:textSize="14dp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:layout_marginLeft="58dp"
+                android:layout_marginRight="58dp"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Saturday"
+                    android:fontFamily="@font/light"
+                    android:textColor="@color/primary1"
+                    android:textAlignment="textStart"
+                    android:textSize="14dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="10:00 am - 12:00 am"
+                    android:fontFamily="@font/light"
+                    android:textColor="@color/primary1"
+                    android:textAlignment="textEnd"
+                    android:textSize="14dp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:layout_marginLeft="58dp"
+                android:layout_marginRight="58dp"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Sunday"
+                    android:fontFamily="@font/light"
+                    android:textColor="@color/primary1"
+                    android:textAlignment="textStart"
+                    android:textSize="14dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="10:00 am - 12:00 am"
+                    android:fontFamily="@font/light"
+                    android:textColor="@color/primary1"
+                    android:textAlignment="textEnd"
+                    android:textSize="14dp"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+
+    </RelativeLayout>
+
+</LinearLayout>

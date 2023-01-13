@@ -1,0 +1,657 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".espresso_menu">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="12dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="18dp"
+                    android:layout_marginTop="5dp"
+                    android:src="@drawable/ic_baseline_arrow_back_24"
+                    android:scaleType="fitStart"
+                    android:id="@+id/backBtn"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="46dp"
+                    android:text="Espresso &amp; Coffee"
+                    android:fontFamily="@font/medium"
+                    android:textSize="24dp"
+                    android:textColor="@color/primary1"
+                    android:textAlignment="center"/>
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="12dp"
+                android:background="@color/grey"/>
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="24dp"
+                            android:layout_marginLeft="28dp"
+                            android:layout_marginRight="28dp"
+                            android:orientation="horizontal"
+                            android:id="@+id/espresso"
+                            android:weightSum="2">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="Espresso"
+                                android:fontFamily="@font/regular"
+                                android:textSize="18dp"
+                                android:textColor="@color/primary1"
+                                android:textAlignment="textStart"
+                                android:id="@+id/espressoText"/>
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:gravity="end"
+                                android:layout_weight="1">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="RM"
+                                    android:fontFamily="@font/extralight"
+                                    android:textSize="18dp"
+                                    android:textColor="@color/primary1"
+                                    android:textAlignment="textEnd"/>
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="10.50"
+                                    android:fontFamily="@font/extralight"
+                                    android:textSize="18dp"
+                                    android:textColor="@color/primary1"
+                                    android:textAlignment="textStart"
+                                    android:id="@+id/espressoPrice"/>
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_marginTop="24dp"
+                            android:background="@color/grey"/>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="24dp"
+                            android:layout_marginLeft="28dp"
+                            android:layout_marginRight="28dp"
+                            android:orientation="horizontal"
+                            android:weightSum="2"
+                            android:id="@+id/espressoCP">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="Espresso Con Panna"
+                                android:fontFamily="@font/regular"
+                                android:textSize="18dp"
+                                android:textColor="@color/primary1"
+                                android:textAlignment="textStart"
+                                android:id="@+id/espressoCPText"/>
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:gravity="end"
+                                android:layout_weight="1">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="RM"
+                                    android:fontFamily="@font/extralight"
+                                    android:textSize="18dp"
+                                    android:textColor="@color/primary1"
+                                    android:textAlignment="textEnd"/>
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="12.50"
+                                    android:fontFamily="@font/extralight"
+                                    android:textSize="18dp"
+                                    android:textColor="@color/primary1"
+                                    android:textAlignment="textStart"
+                                    android:id="@+id/espressoCPPrice"/>
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_marginTop="24dp"
+                            android:background="@color/grey"/>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="24dp"
+                            android:layout_marginLeft="28dp"
+                            android:layout_marginRight="28dp"
+                            android:orientation="horizontal"
+                            android:weightSum="2"
+                            android:id="@+id/caffeLatte">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="Caffè Latte"
+                                android:fontFamily="@font/regular"
+                                android:textSize="18dp"
+                                android:textColor="@color/primary1"
+                                android:textAlignment="textStart"
+                                android:id="@+id/caffeLatteText"/>
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:gravity="end"
+                                android:layout_weight="1">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="RM"
+                                    android:fontFamily="@font/extralight"
+                                    android:textSize="18dp"
+                                    android:textColor="@color/primary1"
+                                    android:textAlignment="textEnd"/>
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="14.00"
+                                    android:fontFamily="@font/extralight"
+                                    android:textSize="18dp"
+                                    android:textColor="@color/primary1"
+                                    android:textAlignment="textStart"
+                                    android:id="@+id/caffeLattePrice"/>
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_marginTop="24dp"
+                            android:background="@color/grey"/>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="24dp"
+                            android:layout_marginLeft="28dp"
+                            android:layout_marginRight="28dp"
+                            android:orientation="horizontal"
+                            android:weightSum="2"
+                            android:id="@+id/caffeMocha">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="Caffè Mocha"
+                                android:fontFamily="@font/regular"
+                                android:textSize="18dp"
+                                android:textColor="@color/primary1"
+                                android:textAlignment="textStart"
+                                android:id="@+id/caffeMochaText"/>
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:gravity="end"
+                                android:layout_weight="1">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="RM"
+                                    android:fontFamily="@font/extralight"
+                                    android:textSize="18dp"
+                                    android:textColor="@color/primary1"
+                                    android:textAlignment="textEnd"/>
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="14.00"
+                                    android:fontFamily="@font/extralight"
+                                    android:textSize="18dp"
+                                    android:textColor="@color/primary1"
+                                    android:textAlignment="textStart"
+                                    android:id="@+id/caffeMochaPrice"/>
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_marginTop="24dp"
+                            android:background="@color/grey"/>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="24dp"
+                            android:layout_marginLeft="28dp"
+                            android:layout_marginRight="28dp"
+                            android:orientation="horizontal"
+                            android:weightSum="2"
+                            android:id="@+id/flatWhite">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="Flat White"
+                                android:fontFamily="@font/regular"
+                                android:textSize="18dp"
+                                android:textColor="@color/primary1"
+                                android:textAlignment="textStart"
+                                android:id="@+id/flatWhiteText"/>
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:gravity="end"
+                                android:layout_weight="1">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="RM"
+                                    android:fontFamily="@font/extralight"
+                                    android:textSize="18dp"
+                                    android:textColor="@color/primary1"
+                                    android:textAlignment="textEnd"/>
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="14.00"
+                                    android:fontFamily="@font/extralight"
+                                    android:textSize="18dp"
+                                    android:textColor="@color/primary1"
+                                    android:textAlignment="textStart"
+                                    android:id="@+id/flatWhitePrice"/>
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_marginTop="24dp"
+                            android:background="@color/grey"/>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="24dp"
+                            android:layout_marginLeft="28dp"
+                            android:layout_marginRight="28dp"
+                            android:orientation="horizontal"
+                            android:weightSum="2"
+                            android:id="@+id/caramelMacchiato">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="Caramel Macchiato"
+                                android:fontFamily="@font/regular"
+                                android:textSize="18dp"
+                                android:textColor="@color/primary1"
+                                android:textAlignment="textStart"
+                                android:id="@+id/caramelMacchiatoText"/>
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:gravity="end"
+                                android:layout_weight="1">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="RM"
+                                    android:fontFamily="@font/extralight"
+                                    android:textSize="18dp"
+                                    android:textColor="@color/primary1"
+                                    android:textAlignment="textEnd"/>
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="17.00"
+                                    android:fontFamily="@font/extralight"
+                                    android:textSize="18dp"
+                                    android:textColor="@color/primary1"
+                                    android:textAlignment="textStart"
+                                    android:id="@+id/caramelMacchiatoPrice"/>
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_marginTop="24dp"
+                            android:background="@color/grey"/>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="24dp"
+                            android:layout_marginLeft="28dp"
+                            android:layout_marginRight="28dp"
+                            android:orientation="horizontal"
+                            android:weightSum="2"
+                            android:id="@+id/cappuccino">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="Cappuccino"
+                                android:fontFamily="@font/regular"
+                                android:textSize="18dp"
+                                android:textColor="@color/primary1"
+                                android:textAlignment="textStart"
+                                android:id="@+id/cappuccinoText"/>
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:gravity="end"
+                                android:layout_weight="1">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="RM"
+                                    android:fontFamily="@font/extralight"
+                                    android:textSize="18dp"
+                                    android:textColor="@color/primary1"
+                                    android:textAlignment="textEnd"/>
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="14.50"
+                                    android:fontFamily="@font/extralight"
+                                    android:textSize="18dp"
+                                    android:textColor="@color/primary1"
+                                    android:textAlignment="textStart"
+                                    android:id="@+id/cappuccinoPrice"/>
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_marginTop="24dp"
+                            android:background="@color/grey"/>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="24dp"
+                            android:layout_marginLeft="28dp"
+                            android:layout_marginRight="28dp"
+                            android:orientation="horizontal"
+                            android:weightSum="2"
+                            android:id="@+id/americano">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="Caffè Americano"
+                                android:fontFamily="@font/regular"
+                                android:textSize="18dp"
+                                android:textColor="@color/primary1"
+                                android:textAlignment="textStart"
+                                android:id="@+id/americanoText"/>
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:gravity="end"
+                                android:layout_weight="1">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="RM"
+                                    android:fontFamily="@font/extralight"
+                                    android:textSize="18dp"
+                                    android:textColor="@color/primary1"
+                                    android:textAlignment="textEnd"/>
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="10.50"
+                                    android:fontFamily="@font/extralight"
+                                    android:textSize="18dp"
+                                    android:textColor="@color/primary1"
+                                    android:textAlignment="textStart"
+                                    android:id="@+id/americanoPrice"/>
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_marginTop="24dp"
+                            android:background="@color/grey"/>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="24dp"
+                            android:layout_marginLeft="28dp"
+                            android:layout_marginRight="28dp"
+                            android:orientation="horizontal"
+                            android:weightSum="2"
+                            android:id="@+id/misto">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="Caffè Misto"
+                                android:fontFamily="@font/regular"
+                                android:textSize="18dp"
+                                android:textColor="@color/primary1"
+                                android:textAlignment="textStart"
+                                android:id="@+id/mistoText"/>
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:gravity="end"
+                                android:layout_weight="1">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="RM"
+                                    android:fontFamily="@font/extralight"
+                                    android:textSize="18dp"
+                                    android:textColor="@color/primary1"
+                                    android:textAlignment="textEnd"/>
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="15.50"
+                                    android:fontFamily="@font/extralight"
+                                    android:textSize="18dp"
+                                    android:textColor="@color/primary1"
+                                    android:textAlignment="textStart"
+                                    android:id="@+id/mistoPrice"/>
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_marginTop="24dp"
+                            android:background="@color/grey"/>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="24dp"
+                            android:layout_marginLeft="28dp"
+                            android:layout_marginRight="28dp"
+                            android:orientation="horizontal"
+                            android:weightSum="2"
+                            android:id="@+id/veranda">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="Veranda Blend®"
+                                android:fontFamily="@font/regular"
+                                android:textSize="18dp"
+                                android:textColor="@color/primary1"
+                                android:textAlignment="textStart"
+                                android:id="@+id/verandaText"/>
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:gravity="end"
+                                android:layout_weight="1">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="RM"
+                                    android:fontFamily="@font/extralight"
+                                    android:textSize="18dp"
+                                    android:textColor="@color/primary1"
+                                    android:textAlignment="textEnd"/>
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="13.50"
+                                    android:fontFamily="@font/extralight"
+                                    android:textSize="18dp"
+                                    android:textColor="@color/primary1"
+                                    android:textAlignment="textStart"
+                                    android:id="@+id/verandaPrice"/>
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_marginTop="24dp"
+                            android:background="@color/grey"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="12dp"
+                            android:layout_marginBottom="36dp"
+                            android:text="- End -"
+                            android:fontFamily="@font/extralight"
+                            android:textSize="18dp"
+                            android:textColor="@color/primary1"
+                            android:textAlignment="center"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </ScrollView>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</FrameLayout>

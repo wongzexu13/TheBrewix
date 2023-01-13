@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".profile">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="18dp"
+                    android:layout_marginTop="5dp"
+                    android:src="@drawable/ic_baseline_arrow_back_24"
+                    android:scaleType="fitStart"
+                    android:id="@+id/backBtn"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="46dp"
+                    android:text="Profile"
+                    android:fontFamily="@font/medium"
+                    android:textSize="24dp"
+                    android:textColor="@color/primary1"
+                    android:textAlignment="center"/>
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="12dp"
+                android:background="@color/grey"/>
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="18dp"
+                    android:layout_marginRight="18dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="24dp"
+                        android:text="Name"
+                        android:fontFamily="@font/semibold"
+                        android:textColor="@color/primary1"
+                        android:textSize="14dp"
+                        android:textAlignment="textStart"/>
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="text"
+                        android:hint="Name"
+                        android:textColorHint="@color/grey"
+                        android:fontFamily="@font/extralight"
+                        android:textColor="@color/primary1"
+                        android:textSize="20dp"
+                        android:id="@+id/name"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="24dp"
+                        android:text="Email Address"
+                        android:fontFamily="@font/semibold"
+                        android:textColor="@color/primary1"
+                        android:textSize="14dp"
+                        android:textAlignment="textStart"/>
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="textEmailAddress"
+                        android:hint="Email Address"
+                        android:textColorHint="@color/grey"
+                        android:fontFamily="@font/extralight"
+                        android:textColor="@color/primary1"
+                        android:textSize="20dp"
+                        android:id="@+id/email"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="24dp"
+                        android:text="Mobile Number (Optional)"
+                        android:fontFamily="@font/semibold"
+                        android:textColor="@color/primary1"
+                        android:textSize="14dp"
+                        android:textAlignment="textStart"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_weight="2">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="+60"
+                            android:fontFamily="@font/light"
+                            android:textSize="20dp"/>
+
+                        <EditText
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:inputType="number"
+                            android:hint=""
+                            android:textColorHint="@color/grey"
+                            android:fontFamily="@font/extralight"
+                            android:textColor="@color/primary1"
+                            android:textSize="20dp"
+                            android:id="@+id/mobile"/>
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="24dp"
+                        android:text="Change Password"
+                        android:fontFamily="@font/semibold"
+                        android:textColor="@color/primary1"
+                        android:textSize="14dp"
+                        android:textAlignment="textStart"
+                        android:id="@+id/changePassword"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="36dp"
+                        android:text="Email preferences &amp; terms"
+                        android:fontFamily="@font/semibold"
+                        android:textColor="@color/primary1"
+                        android:textSize="14dp"
+                        android:textAlignment="textStart"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:weightSum="2">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_weight="1"
+                            android:weightSum="2">
+
+                            <CheckBox
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp"
+                                android:layout_weight="1"
+                                android:buttonTint="@color/primary1"
+                                android:id="@+id/emailPre"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:layout_marginLeft="18dp"
+                                android:paddingBottom="24dp"
+                                android:text="@string/email_preferences_1"
+                                android:fontFamily="@font/extralight"
+                                android:textColor="@color/primary1"
+                                android:textSize="14dp"
+                                android:textAlignment="textStart"/>
+
+                        </LinearLayout>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:layout_marginLeft="41dp"
+                            android:text="@string/email_preferences_2"
+                            android:fontFamily="@font/extralight"
+                            android:textColor="@color/primary1"
+                            android:textSize="14dp"
+                            android:textAlignment="textStart"/>
+
+                    </LinearLayout>
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/button"
+                        android:layout_marginTop="24dp"
+                        android:textAlignment="center"
+                        android:text="Update"
+                        android:fontFamily="@font/regular"
+                        android:textColor="@color/white"
+                        android:textAllCaps="false"
+                        android:textSize="20dp"
+                        android:id="@+id/update"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="4dp"
+                        android:layout_marginBottom="48dp"
+                        android:text="Feedback"
+                        android:fontFamily="@font/extralight"
+                        android:textColor="@color/primary1"
+                        android:visibility="invisible"
+                        android:textSize="16dp"
+                        android:textAlignment="center"
+                        android:id="@+id/feedback"/>
+
+                </LinearLayout>
+
+            </ScrollView>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>
